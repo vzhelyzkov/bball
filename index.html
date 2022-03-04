@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.playground {
+    width: 200px;
+    height: 200px;
+    background-color: #94BBDE;
+    margin: auto;
+}
+
+
+.ball {
+    width: 25px;
+    height: 25px;
+    background-color: #F81B60;
+    position: relative;
+    left: 90px;
+    top: 50px;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+
+@keyframes bounce {
+  0%   {left:90px; top:50px;}
+  45%  {width:25px; height:25px;}
+  50%  {left:90px; top:150px; width:35px; height:10px;}
+  65%  {width:25px; height:25px;}
+  100% {left:90px; top:50px;;} 
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="playground" >
+        
+<div class="ball"></div>
+<div class="shadow"></div>
+
+
+</div>
+
+
+    
+</body>
+</html>
